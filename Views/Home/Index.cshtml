@@ -1,8 +1,30 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CafeHub Web App</title>
+</head>
+<body>
+<h1>Welcome to CafeHub!</h1>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<form id="register-form">
+    <h2>Register</h2>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" required>
+    <br>
+    <button type="submit">Register</button>
+</form>
+
+<!-- Firebase SDKs -->
+<script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+
+<!-- Firebase configuration files -->
+<script type="module" src="/lib/firebase/firebase.config.js"></script>
+<script type="module" src="/lib/firebase/firebase.app.js"></script>
+
+</body>
+</html>
