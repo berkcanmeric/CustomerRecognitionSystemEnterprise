@@ -6,4 +6,10 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\firebase\app.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\firebase\firebase.config.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\firebase\index.html" />
+    </ItemGroup>
+
 </Project>
