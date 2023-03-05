@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/Xo49QkxcABfzAjVgNQ2fh1ppXYBbYECdzRxkEW/fvQ=",
+  "Hash": "CPOmm0v2u6AMSQwi68/9DJ6VhTP+YCPyIRl8U7iiiTI=",
   "Source": "CafeHubWeb",
   "BasePath": "_content/CafeHubWeb",
   "Mode": "Default",
@@ -51,12 +51,12 @@
       "OriginalItemSpec": "C:\\Users\\berkc\\RiderProjects\\CafeHubWeb\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CafeHubWeb.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\berkc\\RiderProjects\\CafeHubWeb\\wwwroot\\css\\register.page.css",
+      "Identity": "C:\\Users\\berkc\\RiderProjects\\CafeHubWeb\\wwwroot\\css\\auth-page.css",
       "SourceId": "CafeHubWeb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\berkc\\RiderProjects\\CafeHubWeb\\wwwroot\\",
       "BasePath": "_content/CafeHubWeb",
-      "RelativePath": "css/register.page.css",
+      "RelativePath": "css/auth-page.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -65,7 +65,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\register.page.css"
+      "OriginalItemSpec": "wwwroot\\css\\auth-page.css"
     },
     {
       "Identity": "C:\\Users\\berkc\\RiderProjects\\CafeHubWeb\\wwwroot\\css\\site.css",
@@ -884,12 +884,12 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\berkc\\RiderProjects\\CafeHubWeb\\wwwroot\\lib\\firebase\\firebase.app.js",
+      "Identity": "C:\\Users\\berkc\\RiderProjects\\CafeHubWeb\\wwwroot\\lib\\firebase\\firebase-auth.js",
       "SourceId": "CafeHubWeb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\berkc\\RiderProjects\\CafeHubWeb\\wwwroot\\",
       "BasePath": "_content/CafeHubWeb",
-      "RelativePath": "lib/firebase/firebase.app.js",
+      "RelativePath": "lib/firebase/firebase-auth.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -898,7 +898,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\firebase\\firebase.app.js"
+      "OriginalItemSpec": "wwwroot\\lib\\firebase\\firebase-auth.js"
+    },
+    {
+      "Identity": "C:\\Users\\berkc\\RiderProjects\\CafeHubWeb\\wwwroot\\lib\\firebase\\firebase-config.js",
+      "SourceId": "CafeHubWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\berkc\\RiderProjects\\CafeHubWeb\\wwwroot\\",
+      "BasePath": "_content/CafeHubWeb",
+      "RelativePath": "lib/firebase/firebase-config.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\firebase\\firebase-config.js"
     },
     {
       "Identity": "C:\\Users\\berkc\\RiderProjects\\CafeHubWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
