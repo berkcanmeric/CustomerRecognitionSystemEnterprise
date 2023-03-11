@@ -17,11 +17,23 @@ public class HomeController : Controller
     {
         return View();
     }
-
+    public IActionResult CafeManagement()
+    {
+        return View("CafeManagement");
+    }
+    public IActionResult SignUp()
+    {
+        return View("SignUp");
+    }
+    public IActionResult ForgotPassword()
+    {
+        return View("ForgotPassword");
+    }
     public IActionResult Privacy()
     {
         return View();
     }
+ 
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
