@@ -1,15 +1,9 @@
-﻿// Import the functions you need from the SDKs you need
-import app from "./firebase-config.js";
-import {
-    getAuth, 
-    signInWithEmailAndPassword
-} from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
-
+﻿import app from "./firebase-config.js";
+import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
 
 const auth = getAuth();
-
-
 const loginButton = document.getElementById('loginButton');
+const rememberMe = document.getElementById('remember');
 
 loginButton.addEventListener('click', (e) => {
     e.preventDefault()
@@ -39,8 +33,3 @@ loginButton.addEventListener('click', (e) => {
             });
         });
 });
- 
-
-  
-
-

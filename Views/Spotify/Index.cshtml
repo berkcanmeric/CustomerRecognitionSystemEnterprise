@@ -3,13 +3,13 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="~/css/auth-page.css?"/>
+    <link rel="stylesheet" href="~/css/auth-page.css?newversion"/>
     <link rel="stylesheet" href="~/css/swal.css?"/>
-    
+
     <!-- SweetAlert2 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
-    
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
@@ -29,38 +29,34 @@
     <div class="container">
 
         <div class="row">
-<div class="col-lg-5 col-md-7 mx-auto">
+            <div class="col-lg-5 col-md-7 mx-auto">
                 <div class="panel border bg-white">
                     <div class="panel-heading">
-                        <h3 class="pt-3 font-weight-bold">Sign Up</h3>
+                        <img src="/images/Spotify_Logo_CMYK_Black.png" alt="" style="
+                                                                                           width: auto;
+                                                                                           height: auto;
+                                                                                           object-fit: contain;  
+                                                                                           border-radius: 0;
+                                                                                           position: static;
+                                                                                           max-width: 100%;
+                                                                                         ">
                     </div>
                     <div class="panel-body p-3">
                         <form>
                             <div class="form-group py-2">
                                 <div class="input-field">
-                                    <span class="far fa-user p-2"></span> <input type="text" placeholder="Email" id="email" required>
+                                    <span class="far fa-user p-2"></span> <input type="text" placeholder="Client ID" id="clientId" required>
                                 </div>
                             </div>
                             <div class="form-group py-1 pb-2">
                                 <div class="input-field">
-                                    <span class="fas fa-lock px-2"></span> <input type="password" placeholder="Password" id="psw" required>
-                                    <button class="btn bg-white text-muted">
-                                        <span class="far fa-eye-slash"></span>
-                                    </button>
+                                    <span class="fas fa-user px-2"></span> <input type="text" placeholder="Client Secret" id="clientSecret" required>
                                 </div>
                             </div>
-                           
-                            <div class="btn btn-primary btn-block mt-3" id="signUpButton">Sign Up</div>
-                            <div class="text-center pt-4 text-muted">Already have an account? <a href="/">Login</a> </div>
+                            <div class="btn btn-primary btn-block mt-3" id="authButton">Request Authorization</div>
                         </form>
                     </div>
-                    <div class="mx-3 my-2 py-2 bordert">
-                        <div class="text-center py-3">
-                            <a href="https://www.google.com" target="_blank" class="px-2">
-                                <img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt="">
-                            </a>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -70,8 +66,9 @@
 
 </form>
 
+
 </body>
 </html>
 
 
-<script type="module" src="/lib/firebase/firebase-signUp.js?"></script>
+<script type="module" src="/lib/spotify/spotify.js?"></script>
