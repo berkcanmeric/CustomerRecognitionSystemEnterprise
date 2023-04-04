@@ -12,4 +12,8 @@
       <_ContentIncludedByDefault Remove="wwwroot\firebase\index.html" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Remove="wwwroot\lib\firebase\firebase-auth-new.js" />
+    </ItemGroup>
+
 </Project>
