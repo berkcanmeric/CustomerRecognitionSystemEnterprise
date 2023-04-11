@@ -29,7 +29,7 @@ signUpButton.addEventListener('click', (e) => {
                 timer: 1500,
                 timerProgressBar: true
             }).then(() => {
-                window.location.href = "/Home/CafeManagement";
+                window.location.href = "/CafeManagement/Index";
             });
         })
         .catch(err => {

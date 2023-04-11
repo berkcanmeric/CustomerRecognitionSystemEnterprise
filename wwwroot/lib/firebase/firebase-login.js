@@ -1,5 +1,5 @@
 ﻿import app from "./firebase-config.js";
-import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
+import {getAuth, signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
 
 const auth = getAuth();
 const loginButton = document.getElementById('loginButton');
@@ -21,7 +21,7 @@ loginButton.addEventListener('click', (e) => {
                 timer: 1500,
                 timerProgressBar: true
             }).then(() => {
-                window.location.href = "/Home/CafeManagement";
+                window.location.href = "/CafeManagement/Index";
             });
         })
         .catch(err => {
