@@ -15,8 +15,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\berkc\RiderProjects\CafeHubWeb
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/berkc/RiderProjects/CafeHubWeb/Views/Home/CafeManagement.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYWZlTWFuYWdlbWVudC5jc2h0bWw=
+[C:/Users/berkc/RiderProjects/CafeHubWeb/Views/CafeManagement/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FmZU1hbmFnZW1lbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/berkc/RiderProjects/CafeHubWeb/Views/CafeManagement/Customers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FmZU1hbmFnZW1lbnRcQ3VzdG9tZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/berkc/RiderProjects/CafeHubWeb/Views/CafeManagement/Payment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FmZU1hbmFnZW1lbnRcUGF5bWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/berkc/RiderProjects/CafeHubWeb/Views/Home/ForgotPassword.cshtml]
