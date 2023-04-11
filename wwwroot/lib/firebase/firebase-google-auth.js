@@ -27,7 +27,7 @@ googleSignInLink.addEventListener('click', () => {
                 timer: 1500,
                 timerProgressBar: true
             }).then(() => {
-                window.location.href = "/Home/CafeManagement";
+                window.location.href = "/CafeManagement/Index";
             });
         }).catch((error) => {
         // Handle Errors here.

@@ -16,4 +16,12 @@
       <Content Remove="wwwroot\lib\firebase\firebase-auth-new.js" />
     </ItemGroup>
 
+    <ItemGroup>
+      <AdditionalFiles Include="Views\CafeManagement\Index.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="wwwroot\lib\cafe-management" />
+    </ItemGroup>
+
 </Project>

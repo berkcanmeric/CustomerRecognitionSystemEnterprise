@@ -20,11 +20,7 @@ namespace CafeHubWeb.Controllers
         }
 
         // [Authorize]
-        public IActionResult CafeManagement()
-        {
-            return View();
-        }
-
+        
         public IActionResult SignUp()
         {
             return View();
