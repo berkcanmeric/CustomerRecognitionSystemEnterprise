@@ -1,7 +1,7 @@
 ﻿<html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/customer-page.css?newversion"/>
+    <link rel="stylesheet" href="~/css/customer-page.css?"/>
 
     <!-- SweetAlert2 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.css">
@@ -17,11 +17,68 @@
         <th>Email</th>
         <th>Birthdate</th>
         <th>Photo URL</th>
+        <th>Edit</th>
+        <th>Delete</th>
     </tr>
     </thead>
     <tbody>
     </tbody>
 </table>
+<!-- Add a button to open the add modal -->
+<button id="add-button" class="add-button"><i class="fas fa-plus"></i>Add Customer</button>
+
+<!-- Edit Modal -->
+<div id="edit-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Edit Customer</h2>
+        <form id="edit-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label for="photoUrl">Photo URL:</label>
+            <input type="text" id="photoUrl" name="photoUrl" required>
+
+            <input type="submit" value="Save">
+        </form>
+    </div>
+</div>
+
+<!-- Add Modal -->
+<div id="add-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Add Customer</h2>
+        <form id="add-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label for="photoUrl">Photo URL:</label>
+            <input type="text" id="photoUrl" name="photoUrl" required>
+
+            <input type="submit" value="Add">
+        </form>
+    </div>
+</div>
+
 </body>
 </html>
-<script type="module" src="/lib/firebase/customer-page.js?"></script>
+<script type="module" src="~/lib/firebase/customer-page.js?newversion"></script>
