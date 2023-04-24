@@ -17,8 +17,12 @@ public class SpotifyController : Controller
     {
         return View();
     }
-  
- 
+
+    public IActionResult AddSong()
+    {
+        return View("AddSong");
+    }
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
