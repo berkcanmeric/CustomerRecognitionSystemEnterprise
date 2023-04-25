@@ -3,6 +3,8 @@
     const customers = document.getElementById('customers');
     const payment = document.getElementById('payment');
     const spotify = document.getElementById('spotify');
+    const product = document.getElementById('product');
+
 
     customers.addEventListener('click', () => {
         // Do something here when the card is clicked
@@ -46,6 +48,20 @@
         }).then(() => {
             console.log('Redirecting to Spotify page...');
             window.location.href = "/Spotify/Index";
+        });
+    });
+    product.addEventListener('click', () => {
+        // Do something here when the card is clicked
+        console.log('Card4 clicked!');
+        Swal.fire({
+            icon: 'success',
+            title: 'You have successfully accessed the Product page!',
+            text: 'You will now be redirected to the Product page.',
+            timer: 1500,
+            timerProgressBar: true
+        }).then(() => {
+            console.log('Redirecting to Product page...');
+            window.location.href = "/CafeManagement/Products";
         });
     });
 });

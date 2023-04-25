@@ -29,6 +29,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FmZU1hbmFnZW1lbnRcUGF5bWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/berkc/RiderProjects/CafeHubWeb/Views/CafeManagement/Products.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FmZU1hbmFnZW1lbnRcUHJvZHVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/berkc/RiderProjects/CafeHubWeb/Views/Home/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -51,6 +55,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/berkc/RiderProjects/CafeHubWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/berkc/RiderProjects/CafeHubWeb/Views/Spotify/AddSong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BvdGlmeVxBZGRTb25nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/berkc/RiderProjects/CafeHubWeb/Views/Spotify/Index.cshtml]
