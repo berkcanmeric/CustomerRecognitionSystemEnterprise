@@ -1,20 +1,17 @@
 ﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
 
-*, *:before, *:after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Open Sans', sans-serif;
-}
+/**, *:before, *:after {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
 
 table {
     background: #07182E;
     border-radius: 0.25em;
     border-collapse: collapse;
     margin: 1em auto; /* set margin to auto to center the table horizontally */
+    vertical-align: top;
 }
 
 th {
@@ -52,6 +49,11 @@ tbody tr:hover {
     border-radius: 50%; /* Make the photos circular */
     object-fit: cover; /* Scale the photos to fit the container */
 }
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .product-image {
     width: 50px;
     height: 50px;
@@ -62,7 +64,11 @@ tbody tr:hover {
     justify-content: center;
     align-items: center;
 }
-
+.table-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .product-image img {
     max-width: 100%;
     max-height: 100%;
@@ -99,7 +105,29 @@ tbody tr:hover {
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
 }
+.pagination-button {
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 5px;
+}
 
+.pagination-button.active {
+    background-color: #2196F3;
+    color: #fff;
+    border-color: #2196F3;
+}
+
+.pagination-button:hover:not(.active) {
+    background-color: #ddd;
+}
 .modal-content {
     background-color: #fefefe;
     margin: 10% auto;
@@ -177,7 +205,13 @@ input[type="submit"]:hover {
 .delete-button i {
     margin-right: 5px;
 }
+.add-button-container {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
 .add-button {
+    margin: 10px;
     background-color: #2196F3;
     border: none;
     color: white;
@@ -186,9 +220,12 @@ input[type="submit"]:hover {
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
-    margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.3s ease-in-out; /* add transition effect */
+}
+.add-button:hover {
+    background-color: #0c7cd5; /* change background color on hover */
 }
 
 .add-button i {

@@ -1,10 +1,15 @@
 ﻿<html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="stylesheet" href="~/css/customer-page.css?newversion"/><!-- SweetAlert2 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.css">
-    <!-- SweetAlert2 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/css/customer-page.css"/>
+    <link rel="stylesheet" href="~/css/common.css?newversion"/>
+    <!-- Include the required CSS files -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css"/>
+
+    <!-- Include jQuery and the DataTables JavaScript files -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
 </head>
 <body>
 <table id="product-table">
@@ -58,4 +63,34 @@
     </div>
 </div>
 </body>
-</html> <script type="module" src="~/lib/firebase/products-page.js?newversion"></script>
+</html>
+<script>
+$(document).ready(function () {
+    $.noConflict();
+    var table = $('#product-table').DataTable({
+        "paging": true, // Enable pagination
+        "pageLength": 5, // Number of rows per page
+
+        "dom": '<"row"<"col-sm-12 text-center"<"h3 mb-0">>><"row"tr><"row"<"col-sm-12 col-md-6"l><"col-sm-12 col-md-6"f>>tip', // Add a title section and length changing input above the table
+        "language": {
+            "info": "Showing _START_ to _END_ of _TOTAL_ entries"
+        },columnDefs: [{
+              "defaultContent": "",
+              "targets": "_all"
+            }]
+     
+    });
+    $("div.h3").html("Ürünler"); // Set the title text
+});
+</script>
+<script type="module" src="~/lib/firebase/products-page.js?newversion"></script>
+<style>
+
+div.dataTables_wrapper div.dataTables_filter label {
+    text-align: right;
+}
+
+th, td{
+    max-width: none!important;
+}
+</style>

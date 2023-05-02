@@ -17,7 +17,7 @@ import {
 // Initialize Firestore
 const db = getFirestore(app);
 
-const cafeId="Acv7hYavbdraEyHibjK4";
+const cafeId = "Acv7hYavbdraEyHibjK4";
 // Get a reference to the Firestore document
 const docc = doc(db, "Cafe", cafeId);
 const productsRef = collection(docc, "Product");
@@ -26,17 +26,15 @@ const newProductRef = doc(productsRef);
 const table = document.getElementById("product-table");
 
 
-
-
-// Add the table headers
-const headerRow = table.insertRow();
-headerRow.insertCell().textContent = "Name";
-headerRow.insertCell().textContent = "Category";
-headerRow.insertCell().textContent = "Price";
-// headerRow.insertCell().textContent = "Best Selling";
-headerRow.insertCell().textContent = "Image";
-headerRow.insertCell(); // Empty cell for the edit button
-headerRow.insertCell(); // Empty cell for the delete button
+// // Add the table headers
+// const headerRow = table.insertRow();
+// headerRow.insertCell().textContent = "Name";
+// headerRow.insertCell().textContent = "Category";
+// headerRow.insertCell().textContent = "Price";
+// // headerRow.insertCell().textContent = "Best Selling";
+// headerRow.insertCell().textContent = "Image";
+// headerRow.insertCell(); // Empty cell for the edit button
+// headerRow.insertCell(); // Empty cell for the delete button
 
 async function getData() {
     try {
@@ -135,26 +133,25 @@ async function getData() {
             openModal("add-modal");
         }
 
+        // Clear the table before adding new data (except for the headers)
+        $('#product-table').DataTable().clear();
         // Loop through the query snapshot and append the product data to the table
         querySnapshot.forEach((docc) => {
             const data = docc.data();
-            const row = table.insertRow();
-            row.insertCell().textContent = data.name;
-            row.insertCell().textContent = data.category;
-            row.insertCell().textContent = data.price;
-            // row.insertCell().textContent = data.bestSelling;
-            const imageCell = row.insertCell();
-            const img = document.createElement("img");
-            img.src = data.imageUrl;
-            img.alt = "Product Image";
-            img.classList.add("product-image");
-            imageCell.appendChild(img);
+            const row = $('#product-table').DataTable().row.add([
+                data.name,
+                data.category,
+                data.price,
+                `<img src="${data.imageUrl}" alt="Product Image" class="product-image"/>`
+            ]).draw().node();
 
-            createButtonAndAppendToCell("Düzenle", "edit-button", row.insertCell(), () => {
+            const editCell = $('#product-table').DataTable().cell(row, 4).node();
+            createButtonAndAppendToCell('Düzenle', 'edit-button', editCell, () => {
                 openEditModal(docc, data);
             });
 
-            createButtonAndAppendToCell("Sil", "delete-button", row.insertCell(), () => {
+            const deleteCell = $('#product-table').DataTable().cell(row, 5).node();
+            createButtonAndAppendToCell('Sil', 'delete-button', deleteCell, () => {
                 deleteProductData(docc.id);
             });
         });
@@ -297,6 +294,8 @@ async function getData() {
     } catch (err) {
         console.error("Error getting products:", err);
     }
+    // Redraw the table to update the pagination
+    $('#product-table').DataTable().draw();
 }
 
 async function productExists(name, category) {
