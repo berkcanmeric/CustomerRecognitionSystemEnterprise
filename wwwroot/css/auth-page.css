@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif
-}
+/** {*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*    box-sizing: border-box;*/
+/*    font-family: 'Poppins', sans-serif*/
+/*}*/
 
 body {
-    height: 100vh;
+    /*height: 100vh;*/
     /*background: linear-gradient(to top, #e77917 50%, #130912 90%) no-repeat*/
 }
 
@@ -91,7 +91,7 @@ a[target='_blank'] {
     padding: 0px 8px
 }
 
-@media(max-width: 360px) {
+@media (max-width: 360px) {
     #forgot {
         margin-left: 0;
         padding-top: 10px

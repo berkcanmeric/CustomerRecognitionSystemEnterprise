@@ -1,16 +1,17 @@
 ﻿
-body {
-    min-height: 100vh;
-}
+/*body {*/
+/*    min-height: 100vh;*/
+/*}*/
 
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 40px;
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 2000px;
+    margin: 40px auto 0;
 }
 
 .card {

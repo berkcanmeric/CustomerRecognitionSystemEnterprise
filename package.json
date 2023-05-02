@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "firebase": "^9.17.2"
+    "datatables.net-plugins": "^1.13.4",
+    "firebase": "^9.17.2",
+    "jquery": "^3.6.4"
   }
 }

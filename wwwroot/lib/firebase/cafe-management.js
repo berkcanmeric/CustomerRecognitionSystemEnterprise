@@ -36,20 +36,20 @@
         });
     });
 
-    spotify.addEventListener('click', () => {
-        // Do something here when the card is clicked
-        console.log('Kart3 tıklandı!');
-        Swal.fire({
-            icon: 'success',
-            title: 'Spotify sayfasına başarıyla erişildi!',
-            text: 'Spotify sayfasına yönlendiriliyorsunuz.',
-            timer: 1500,
-            timerProgressBar: true
-        }).then(() => {
-            console.log('Spotify sayfasına yönlendiriliyor...');
-            window.location.href = "/Spotify/Index";
-        });
-    });
+    // spotify.addEventListener('click', () => {
+    //     // Do something here when the card is clicked
+    //     console.log('Kart3 tıklandı!');
+    //     Swal.fire({
+    //         icon: 'success',
+    //         title: 'Spotify sayfasına başarıyla erişildi!',
+    //         text: 'Spotify sayfasına yönlendiriliyorsunuz.',
+    //         timer: 1500,
+    //         timerProgressBar: true
+    //     }).then(() => {
+    //         console.log('Spotify sayfasına yönlendiriliyor...');
+    //         window.location.href = "/Spotify/Index";
+    //     });
+    // });
     product.addEventListener('click', () => {
         // Do something here when the card is clicked
         console.log('Kart4 tıklandı!');
