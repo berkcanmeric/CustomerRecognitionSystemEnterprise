@@ -12,69 +12,69 @@
 <table id="customer-table">
     <thead>
     <tr>
-        <th>Name</th>
-        <th>Surname</th>
-        <th>Email</th>
-        <th>Birthdate</th>
-        <th>Photo URL</th>
-        <th>Edit</th>
-        <th>Delete</th>
+        <th>Ad</th>
+        <th>Soyad</th>
+        <th>E-posta</th>
+        <th>Doğum Tarihi</th>
+        <th>Fotoğraf</th>
+        <th>Düzenle</th>
+        <th>Sil</th>
     </tr>
     </thead>
     <tbody>
     </tbody>
 </table>
-<!-- Add a button to open the add modal -->
-<button id="add-button" class="add-button"><i class="fas fa-plus"></i>Add Customer</button>
+<!-- Ekleme modalını açmak için bir düğme ekleyin -->
+<button id="add-button" class="add-button"><i class="fas fa-plus"></i>Müşteri Ekle</button>
 
-<!-- Edit Modal -->
+<!-- Düzenleme Modalı -->
 <div id="edit-modal" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
-        <h2>Edit Customer</h2>
+        <h2>Müşteri Düzenle</h2>
         <form id="edit-form">
-            <label for="name">Name:</label>
+            <label for="name">Ad:</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="surname">Surname:</label>
+            <label for="surname">Soyad:</label>
             <input type="text" id="surname" name="surname" required>
 
-            <label for="email">Email:</label>
+            <label for="email">E-posta:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="birthdate">Birthdate:</label>
+            <label for="birthdate">Doğum Tarihi:</label>
             <input type="date" id="birthdate" name="birthdate" required>
 
-            <label for="photoUrl">Photo URL:</label>
+            <label for="photoUrl">Fotoğraf URL:</label>
             <input type="text" id="photoUrl" name="photoUrl" required>
 
-            <input type="submit" value="Save">
+            <input type="submit" value="Kaydet">
         </form>
     </div>
 </div>
 
-<!-- Add Modal -->
+<!-- Ekleme Modalı -->
 <div id="add-modal" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
-        <h2>Add Customer</h2>
+        <h2>Müşteri Ekle</h2>
         <form id="add-form">
-            <label for="name">Name:</label>
+            <label for="name">Ad:</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="surname">Surname:</label>
+            <label for="surname">Soyad:</label>
             <input type="text" id="surname" name="surname" required>
 
-            <label for="email">Email:</label>
+            <label for="email">E-posta:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="birthdate">Birthdate:</label>
+            <label for="birthdate">Doğum Tarihi:</label>
             <input type="date" id="birthdate" name="birthdate" required>
 
-            <label for="photoUrl">Photo URL:</label>
+            <label for="photoUrl">Fotoğraf URL:</label>
             <input type="text" id="photoUrl" name="photoUrl" required>
 
-            <input type="submit" value="Add">
+            <input type="submit" value="Ekle">
         </form>
     </div>
 </div>

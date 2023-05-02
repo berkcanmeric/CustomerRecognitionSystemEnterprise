@@ -52,7 +52,22 @@ tbody tr:hover {
     border-radius: 50%; /* Make the photos circular */
     object-fit: cover; /* Scale the photos to fit the container */
 }
+.product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
 /* Style for the edit button */
 .edit-button {
     background-color: #4CAF50;

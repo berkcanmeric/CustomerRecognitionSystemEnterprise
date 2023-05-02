@@ -25,6 +25,10 @@ public class CafeManagement : Controller
     {
         return View("Payment");
     }
+    public IActionResult Products()
+    {
+        return View("Products");
+    }
   
  
 
