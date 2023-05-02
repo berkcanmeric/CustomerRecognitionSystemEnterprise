@@ -1,51 +1,67 @@
-﻿document.addEventListener("DOMContentLoaded", function() {
-    
+﻿document.addEventListener("DOMContentLoaded", function () {
+
     const customers = document.getElementById('customers');
     const payment = document.getElementById('payment');
     const spotify = document.getElementById('spotify');
+    const product = document.getElementById('product');
+
 
     customers.addEventListener('click', () => {
         // Do something here when the card is clicked
-        console.log('Card1 clicked!');
+        console.log('Kart1 tıklandı!');
         Swal.fire({
             icon: 'success',
-            title: 'You have successfully accessed the Customers page!',
-            text: 'You will now be redirected to the Customers page.',
+            title: 'Müşteri sayfasına başarıyla erişildi!',
+            text: 'Müşteri sayfasına yönlendiriliyorsunuz.',
             timer: 1500,
             timerProgressBar: true
         }).then(() => {
-            console.log('Redirecting to Customers page...');
+            console.log('Müşteri sayfasına yönlendiriliyor...');
             window.location.href = "/CafeManagement/Customers";
         });
     });
 
     payment.addEventListener('click', () => {
         // Do something here when the card is clicked
-        console.log('Card2 clicked!');
+        console.log('Kart2 tıklandı!');
         Swal.fire({
             icon: 'success',
-            title: 'You have successfully accessed the Payment page!',
-            text: 'You will now be redirected to the Payment page.',
+            title: 'Ödeme sayfasına başarıyla erişildi!',
+            text: 'Ödeme sayfasına yönlendiriliyorsunuz.',
             timer: 1500,
             timerProgressBar: true
         }).then(() => {
-            console.log('Redirecting to Payment page...');
+            console.log('Ödeme sayfasına yönlendiriliyor...');
             window.location.href = "/CafeManagement/Payment";
         });
     });
 
     spotify.addEventListener('click', () => {
         // Do something here when the card is clicked
-        console.log('Card3 clicked!');
+        console.log('Kart3 tıklandı!');
         Swal.fire({
             icon: 'success',
-            title: 'You have successfully accessed the Spotify page!',
-            text: 'You will now be redirected to the Spotify page.',
+            title: 'Spotify sayfasına başarıyla erişildi!',
+            text: 'Spotify sayfasına yönlendiriliyorsunuz.',
             timer: 1500,
             timerProgressBar: true
         }).then(() => {
-            console.log('Redirecting to Spotify page...');
+            console.log('Spotify sayfasına yönlendiriliyor...');
             window.location.href = "/Spotify/Index";
+        });
+    });
+    product.addEventListener('click', () => {
+        // Do something here when the card is clicked
+        console.log('Kart4 tıklandı!');
+        Swal.fire({
+            icon: 'success',
+            title: 'Ürün sayfasına başarıyla erişildi!',
+            text: 'Ürün sayfasına yönlendiriliyorsunuz.',
+            timer: 1500,
+            timerProgressBar: true
+        }).then(() => {
+            console.log('Ürün sayfasına yönlendiriliyor...');
+            window.location.href = "/CafeManagement/Products";
         });
     });
 });
